@@ -39,8 +39,8 @@ func init() {
 }
 
 // Cross compilation docker containers
-var dockerBase = "karalabe/xgo-base"
-var dockerDist = "karalabe/xgo-"
+var dockerBase = "xwl7001/xgo-base"
+var dockerDist = "xwl7001/xgo-"
 
 // Command line arguments to fine tune the compilation
 var (
@@ -106,6 +106,7 @@ func main() {
 		}
 		// Validate the command line arguments
 		if len(flag.Args()) != 1 {
+			log.Println(flag.NArg())
 			log.Fatalf("Usage: %s [options] <go import path>", os.Args[0])
 		}
 		// Select the image to use, either official or custom

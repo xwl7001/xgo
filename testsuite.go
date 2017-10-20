@@ -26,11 +26,11 @@ var layers = []struct {
 	tag string
 	dir string
 }{
-	{"karalabe/xgo-base", "base"},
-	{"karalabe/xgo-1.6.2", "go-1.6.2"},
-	{"karalabe/xgo-1.6.x", "go-1.6.x"},
-	{"karalabe/xgo-latest", "go-latest"},
-	//{"karalabe/xgo-latest-ios", "go-latest-ios"}, // Non-public layer (XCode licensing)
+	// {"xwl7001/xgo-base", "base"},
+	{"xwl7001/xgo-1.9.1", "go-1.9.1"},
+	{"xwl7001/xgo-1.9.x", "go-1.9.x"},
+	{"xwl7001/xgo-latest", "go-latest"},
+	//{"xwl7001/xgo-latest-ios", "go-latest-ios"}, // Non-public layer (XCode licensing)
 }
 
 // tests defaines all the input test cases and associated arguments the cross
